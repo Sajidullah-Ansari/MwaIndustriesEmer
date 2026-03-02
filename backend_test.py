@@ -32,7 +32,9 @@ class MWAAPITester:
                 if files:
                     response = requests.post(url, data=data, files=files, headers=headers, timeout=30)
                 elif data:
-                    response = requests.post(url, data=data, headers=headers, timeout=30)
+                    if 'Content-Type' not in headers:
+                        headers['Content-Type'] = 'application/json'
+                    response = requests.post(url, json=data, headers=headers, timeout=30)
                 else:
                     headers['Content-Type'] = 'application/json'
                     response = requests.post(url, json={}, headers=headers, timeout=30)
