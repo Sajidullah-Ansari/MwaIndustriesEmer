@@ -25,16 +25,16 @@ const Services = () => {
   return (
     <div className="min-h-screen pt-32 lg:pt-44" data-testid="services-page">
       {/* Hero Section */}
-      <section className="py-16 bg-neutral-950">
+      <section className="py-16 bg-[rgb(var(--industrial-black))]">
         <div className="max-w-7xl mx-auto px-6">
           <AnimatedSection>
-            <span className="font-mono text-xs uppercase tracking-widest text-amber-400 mb-4 block">
+            <span className="font-mono text-xs uppercase tracking-widest text-[rgb(var(--safety-yellow))] mb-4 block">
               Our Services
             </span>
-            <h1 className="font-oswald font-bold text-4xl md:text-6xl uppercase tracking-tight text-white mb-6">
-              Fabrication <span className="text-amber-400">Capabilities</span>
+            <h1 className="font-oswald font-bold text-4xl md:text-6xl uppercase tracking-tight text-[rgb(var(--text-primary))] mb-6">
+              Fabrication <span className="text-[rgb(var(--safety-yellow))]">Capabilities</span>
             </h1>
-            <p className="text-neutral-400 text-lg max-w-3xl leading-relaxed">
+            <p className="text-[rgb(var(--text-secondary))] text-lg max-w-3xl leading-relaxed">
               Comprehensive metal fabrication services for industrial applications. From heavy structures to precision machining, we deliver quality solutions.
             </p>
           </AnimatedSection>
@@ -42,14 +42,14 @@ const Services = () => {
       </section>
 
       {/* Quick Navigation */}
-      <section className="py-8 bg-neutral-900 border-y border-neutral-800 sticky top-20 lg:top-[105px] z-30">
+      <section className="py-8 bg-[rgb(var(--industrial-gray))] border-y border-[rgb(var(--border))] sticky top-20 lg:top-[105px] z-30">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex gap-4 overflow-x-auto pb-2 -mb-2 scrollbar-hide">
             {serviceCategories.map((category) => (
               <a
                 key={category.id}
                 href={`#${category.id}`}
-                className="font-oswald text-sm uppercase tracking-wide text-neutral-400 hover:text-amber-400 transition-colors whitespace-nowrap px-4 py-2 border border-neutral-700 hover:border-amber-400/30"
+                className="font-oswald text-sm uppercase tracking-wide text-[rgb(var(--text-secondary))] hover:text-[rgb(var(--safety-yellow))] transition-colors whitespace-nowrap px-4 py-2 border border-[rgb(var(--border))] hover:border-[rgb(var(--safety-yellow))]/30"
               >
                 {category.name}
               </a>
@@ -63,14 +63,14 @@ const Services = () => {
         <section 
           key={category.id} 
           id={category.id}
-          className={`py-24 ${categoryIndex % 2 === 0 ? 'bg-neutral-950' : 'bg-neutral-900'}`}
+          className={`py-24 ${categoryIndex % 2 === 0 ? 'bg-[rgb(var(--industrial-black))]' : 'bg-[rgb(var(--industrial-gray))]'}`}
         >
           <div className="max-w-7xl mx-auto px-6">
             <AnimatedSection className="mb-12">
-              <span className="font-mono text-xs uppercase tracking-widest text-amber-400 mb-4 block">
+              <span className="font-mono text-xs uppercase tracking-widest text-[rgb(var(--safety-yellow))] mb-4 block">
                 {String(categoryIndex + 1).padStart(2, '0')}
               </span>
-              <h2 className="font-oswald font-medium text-3xl md:text-4xl uppercase tracking-tight text-white">
+              <h2 className="font-oswald font-medium text-3xl md:text-4xl uppercase tracking-tight text-[rgb(var(--text-primary))]">
                 {category.name}
               </h2>
             </AnimatedSection>
@@ -85,7 +85,7 @@ const Services = () => {
                   <AnimatedSection key={service.id} delay={index * 0.1}>
                     <div 
                       id={service.id}
-                      className="group bg-neutral-900 border border-neutral-800 overflow-hidden hover:border-amber-400/30 transition-all duration-500 h-full flex flex-col"
+                      className="group bg-[rgb(var(--industrial-gray))] border border-[rgb(var(--border))] overflow-hidden hover:border-[rgb(var(--safety-yellow))]/30 transition-all duration-500 h-full flex flex-col"
                     >
                       <div className="aspect-[16/10] relative overflow-hidden">
                         <img 
@@ -94,27 +94,27 @@ const Services = () => {
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                           loading="lazy"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-transparent to-transparent" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-[rgb(var(--industrial-black))] via-transparent to-transparent" />
                         <div className="absolute top-4 left-4">
-                          <div className="w-10 h-10 bg-amber-500 flex items-center justify-center">
+                          <div className="w-10 h-10 bg-[rgb(var(--safety-yellow))] flex items-center justify-center">
                             <Icon size={20} className="text-black" />
                           </div>
                         </div>
                       </div>
                       <div className="p-6 flex-1 flex flex-col">
-                        <h3 className="font-oswald font-medium text-xl text-white uppercase mb-3">
+                        <h3 className="font-oswald font-medium text-xl text-[rgb(var(--text-primary))] uppercase mb-3">
                           {service.title}
                         </h3>
-                        <p className="text-neutral-400 text-sm mb-4 flex-1">
+                        <p className="text-[rgb(var(--text-secondary))] text-sm mb-4 flex-1">
                           {service.description}
                         </p>
                         <div className="mb-4">
-                          <span className="font-mono text-xs uppercase tracking-wide text-neutral-500 block mb-2">
+                          <span className="font-mono text-xs uppercase tracking-wide text-[rgb(var(--text-secondary))] block mb-2">
                             Industries Served:
                           </span>
                           <div className="flex flex-wrap gap-2">
                             {service.industries.slice(0, 3).map((industry) => (
-                              <span key={industry} className="text-xs text-neutral-400 bg-neutral-950 px-2 py-1">
+                              <span key={industry} className="text-xs text-[rgb(var(--text-secondary))] bg-[rgb(var(--industrial-black))] px-2 py-1">
                                 {industry}
                               </span>
                             ))}
@@ -122,7 +122,7 @@ const Services = () => {
                         </div>
                         <Link
                           to={`/request-quote?service=${encodeURIComponent(service.title)}`}
-                          className="inline-flex items-center gap-2 text-amber-400 font-mono text-sm uppercase tracking-wide group-hover:gap-3 transition-all"
+                          className="inline-flex items-center gap-2 text-[rgb(var(--safety-yellow))] font-mono text-sm uppercase tracking-wide group-hover:gap-3 transition-all"
                           data-testid={`quote-btn-${service.id}`}
                         >
                           Request Quote <ArrowRight size={14} />
@@ -138,7 +138,7 @@ const Services = () => {
       ))}
 
       {/* CTA Section */}
-      <section className="py-24 bg-amber-500">
+      <section className="py-24 bg-[rgb(var(--safety-yellow))]">
         <div className="max-w-7xl mx-auto px-6">
           <AnimatedSection className="flex flex-col lg:flex-row justify-between items-center gap-8">
             <div>
@@ -151,7 +151,7 @@ const Services = () => {
             </div>
             <Link
               to="/request-quote"
-              className="bg-black text-white font-oswald font-bold uppercase px-8 py-4 flex items-center gap-3 hover:bg-neutral-800 transition-colors shrink-0"
+              className="bg-black text-white font-oswald font-bold uppercase px-8 py-4 flex items-center gap-3 hover:bg-[rgb(var(--industrial-gray))] transition-colors shrink-0"
               data-testid="services-request-quote-btn"
             >
               Request a Quote
