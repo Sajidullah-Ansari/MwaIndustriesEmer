@@ -203,14 +203,14 @@ const Home = () => {
               const Icon = iconMap[signal.icon];
               return (
                 <AnimatedSection key={signal.id} delay={index * 0.1}>
-                  <div className="group bg-neutral-900 border border-neutral-800 p-8 hover:border-amber-400/30 transition-all duration-500 h-full">
-                    <div className="w-12 h-12 bg-amber-400/10 flex items-center justify-center mb-6 group-hover:bg-amber-400/20 transition-colors">
-                      {Icon && <Icon size={24} className="text-amber-400" />}
+                  <div className="group bg-[rgb(var(--industrial-gray))] border border-[rgb(var(--border))] p-8 hover:border-[rgb(var(--safety-yellow))]/30 transition-all duration-500 h-full">
+                    <div className="w-12 h-12 bg-[rgb(var(--safety-yellow))]/10 flex items-center justify-center mb-6 group-hover:bg-[rgb(var(--safety-yellow))]/20 transition-colors">
+                      {Icon && <Icon size={24} className="text-[rgb(var(--safety-yellow))]" />}
                     </div>
-                    <h3 className="font-oswald font-medium text-xl text-white uppercase mb-3">
+                    <h3 className="font-oswald font-medium text-xl text-[rgb(var(--text-primary))] uppercase mb-3">
                       {signal.title}
                     </h3>
-                    <p className="text-neutral-400 text-sm leading-relaxed">
+                    <p className="text-[rgb(var(--text-secondary))] text-sm leading-relaxed">
                       {signal.description}
                     </p>
                   </div>
@@ -222,40 +222,40 @@ const Home = () => {
       </section>
 
       {/* Our Story Section */}
-      <section className="py-24 bg-neutral-900">
+      <section className="py-24 bg-[rgb(var(--industrial-gray))]">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <AnimatedSection>
-              <span className="font-mono text-xs uppercase tracking-widest text-amber-400 mb-4 block">
+              <span className="font-mono text-xs uppercase tracking-widest text-[rgb(var(--safety-yellow))] mb-4 block">
                 Our Story
               </span>
-              <h2 className="font-oswald font-medium text-3xl md:text-4xl uppercase tracking-tight text-white mb-6">
+              <h2 className="font-oswald font-medium text-3xl md:text-4xl uppercase tracking-tight text-[rgb(var(--text-primary))] mb-6">
                 Experience-Backed Leadership
               </h2>
-              <p className="text-neutral-400 leading-relaxed mb-6">
+              <p className="text-[rgb(var(--text-secondary))] leading-relaxed mb-6">
                 {companyInfo.about.story}
               </p>
-              <div className="bg-neutral-950 border border-neutral-800 p-6 mb-6">
+              <div className="bg-[rgb(var(--industrial-black))] border border-[rgb(var(--border))] p-6 mb-6">
                 <div className="flex items-center gap-4">
-                  <div className="w-16 h-16 bg-amber-500 flex items-center justify-center">
+                  <div className="w-16 h-16 bg-[rgb(var(--safety-yellow))] flex items-center justify-center">
                     <span className="font-oswald font-bold text-2xl text-black">35+</span>
                   </div>
                   <div>
-                    <p className="font-oswald text-lg text-white uppercase">Years of Industry Experience</p>
-                    <p className="text-neutral-400 text-sm">Through our founder's family legacy</p>
+                    <p className="font-oswald text-lg text-[rgb(var(--text-primary))] uppercase">Years of Industry Experience</p>
+                    <p className="text-[rgb(var(--text-secondary))] text-sm">Expertise you can trust</p>
                   </div>
                 </div>
               </div>
               <Link
                 to="/about"
-                className="inline-flex items-center gap-2 text-amber-400 font-mono text-sm uppercase tracking-wide hover:gap-3 transition-all"
+                className="inline-flex items-center gap-2 text-[rgb(var(--safety-yellow))] font-mono text-sm uppercase tracking-wide hover:gap-3 transition-all"
               >
                 Read Full Story <ArrowRight size={14} />
               </Link>
             </AnimatedSection>
             <AnimatedSection delay={0.2} direction="left">
               <div className="relative">
-                <div className="aspect-[4/3] bg-neutral-950 border border-neutral-800 overflow-hidden">
+                <div className="aspect-[4/3] bg-[rgb(var(--industrial-black))] border border-[rgb(var(--border))] overflow-hidden">
                   <img 
                     src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80"
                     alt="Heavy Fabrication Workshop"
@@ -270,16 +270,16 @@ const Home = () => {
       </section>
 
       {/* Capabilities Overview */}
-      <section className="py-24 bg-neutral-950">
+      <section className="py-24 bg-[rgb(var(--industrial-black))]">
         <div className="max-w-7xl mx-auto px-6">
           <AnimatedSection className="text-center mb-16">
-            <span className="font-mono text-xs uppercase tracking-widest text-amber-400 mb-4 block">
+            <span className="font-mono text-xs uppercase tracking-widest text-[rgb(var(--safety-yellow))] mb-4 block">
               Our Capabilities
             </span>
-            <h2 className="font-oswald font-medium text-3xl md:text-5xl uppercase tracking-tight text-white mb-4">
+            <h2 className="font-oswald font-medium text-3xl md:text-5xl uppercase tracking-tight text-[rgb(var(--text-primary))] mb-4">
               What We Fabricate
             </h2>
-            <p className="text-neutral-400 max-w-2xl mx-auto">
+            <p className="text-[rgb(var(--text-secondary))] max-w-2xl mx-auto">
               Comprehensive metal fabrication services for industrial applications
             </p>
           </AnimatedSection>
@@ -291,7 +291,7 @@ const Home = () => {
                 <AnimatedSection key={service.id} delay={index * 0.1}>
                   <Link 
                     to={`/services#${service.id}`}
-                    className="group block bg-neutral-900 border border-neutral-800 overflow-hidden hover:border-amber-400/30 transition-all duration-500"
+                    className="group block bg-[rgb(var(--industrial-gray))] border border-[rgb(var(--border))] overflow-hidden hover:border-[rgb(var(--safety-yellow))]/30 transition-all duration-500"
                   >
                     <div className="aspect-[16/10] relative overflow-hidden">
                       <img 
@@ -300,21 +300,21 @@ const Home = () => {
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                         loading="lazy"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-transparent to-transparent" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-[rgb(var(--industrial-black))] via-transparent to-transparent" />
                     </div>
                     <div className="p-6">
                       <div className="flex items-center gap-3 mb-3">
-                        <div className="w-8 h-8 bg-amber-400/10 flex items-center justify-center">
-                          <Icon size={16} className="text-amber-400" />
+                        <div className="w-8 h-8 bg-[rgb(var(--safety-yellow))]/10 flex items-center justify-center">
+                          <Icon size={16} className="text-[rgb(var(--safety-yellow))]" />
                         </div>
-                        <h3 className="font-oswald font-medium text-lg text-white uppercase">
+                        <h3 className="font-oswald font-medium text-lg text-[rgb(var(--text-primary))] uppercase">
                           {service.title}
                         </h3>
                       </div>
-                      <p className="text-neutral-400 text-sm mb-4">
+                      <p className="text-[rgb(var(--text-secondary))] text-sm mb-4">
                         {service.shortDescription}
                       </p>
-                      <span className="text-amber-400 text-sm font-mono uppercase tracking-wide flex items-center gap-2 group-hover:gap-3 transition-all">
+                      <span className="text-[rgb(var(--safety-yellow))] text-sm font-mono uppercase tracking-wide flex items-center gap-2 group-hover:gap-3 transition-all">
                         Learn More <ArrowRight size={14} />
                       </span>
                     </div>
@@ -327,7 +327,7 @@ const Home = () => {
           <AnimatedSection className="text-center mt-12">
             <Link
               to="/services"
-              className="inline-flex items-center gap-2 border border-neutral-700 text-white font-oswald uppercase px-8 py-4 hover:bg-neutral-900 transition-colors"
+              className="inline-flex items-center gap-2 border border-[rgb(var(--border))] text-[rgb(var(--text-primary))] font-oswald uppercase px-8 py-4 hover:bg-[rgb(var(--industrial-gray))] transition-colors"
               data-testid="view-all-services-btn"
             >
               View All Services
@@ -338,14 +338,14 @@ const Home = () => {
       </section>
 
       {/* Industries Section */}
-      <section className="py-24 bg-neutral-900">
+      <section className="py-24 bg-[rgb(var(--industrial-gray))]">
         <div className="max-w-7xl mx-auto px-6">
           <AnimatedSection className="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-16 gap-6">
             <div>
-              <span className="font-mono text-xs uppercase tracking-widest text-amber-400 mb-4 block">
+              <span className="font-mono text-xs uppercase tracking-widest text-[rgb(var(--safety-yellow))] mb-4 block">
                 Industries We Serve
               </span>
-              <h2 className="font-oswald font-medium text-3xl md:text-5xl uppercase tracking-tight text-white">
+              <h2 className="font-oswald font-medium text-3xl md:text-5xl uppercase tracking-tight text-[rgb(var(--text-primary))]">
                 Powering India's Growth
               </h2>
             </div>
