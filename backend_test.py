@@ -244,8 +244,7 @@ class MWAAPITester:
             "POST",
             "api/status",
             200,
-            data=status_data,
-            headers={'Content-Type': 'application/json'}
+            data=status_data
         )
         
         # Test get status checks
