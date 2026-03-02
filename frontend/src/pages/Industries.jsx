@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowRight, Zap, Mountain, Building, Droplet, Flask, Landmark, Factory, Users } from 'lucide-react';
+import { ArrowRight, Zap, Mountain, Building, Droplet, Beaker, Landmark, Factory, Users } from 'lucide-react';
 import AnimatedSection from '../components/ui/AnimatedSection';
 import { industries } from '../data/industries';
 
 const iconMap = {
-  Zap, Mountain, Building, Droplet, Flask, Landmark, Factory, Users
+  Zap, Mountain, Building, Droplet, Beaker, Landmark, Factory, Users, Flask: Beaker
 };
 
 const Industries = () => {
