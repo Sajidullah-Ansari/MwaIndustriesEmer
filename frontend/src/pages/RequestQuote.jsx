@@ -92,23 +92,23 @@ const RequestQuote = () => {
   if (isSuccess) {
     return (
       <div className="min-h-screen pt-32 lg:pt-44" data-testid="rfq-page">
-        <section className="py-24 bg-industrial-black">
+        <section className="py-24 bg-[rgb(var(--industrial-black))]">
           <div className="max-w-2xl mx-auto px-6 text-center">
             <motion.div
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
-              className="w-20 h-20 bg-safety-yellow mx-auto mb-8 flex items-center justify-center"
+              className="w-20 h-20 bg-[rgb(var(--safety-yellow))] mx-auto mb-8 flex items-center justify-center"
             >
               <CheckCircle size={40} className="text-black" />
             </motion.div>
-            <h1 className="font-oswald font-bold text-4xl uppercase text-white mb-4">
+            <h1 className="font-oswald font-bold text-4xl uppercase text-[rgb(var(--text-primary))] mb-4">
               Quote Request Received!
             </h1>
-            <p className="text-slate-400 text-lg mb-8">
+            <p className="text-[rgb(var(--text-secondary))] text-lg mb-8">
               Thank you for your interest. Our team will review your requirements and get back to you within 24 hours with a detailed quotation.
             </p>
-            <div className="bg-industrial-gray border border-white/10 p-6 mb-8">
-              <p className="text-slate-300 text-sm mb-4">Need immediate assistance?</p>
+            <div className="bg-[rgb(var(--industrial-gray))] border border-[rgb(var(--border))] p-6 mb-8">
+              <p className="text-[rgb(var(--text-secondary))] text-sm mb-4">Need immediate assistance?</p>
               <div className="flex flex-col sm:flex-row justify-center gap-4">
                 <a
                   href={`https://wa.me/${companyInfo.contact.whatsapp}`}
@@ -122,7 +122,7 @@ const RequestQuote = () => {
                 </a>
                 <a
                   href={`tel:${companyInfo.contact.phone}`}
-                  className="flex items-center justify-center gap-2 bg-safety-yellow text-black font-oswald font-bold uppercase px-6 py-3 hover:bg-white transition-colors"
+                  className="flex items-center justify-center gap-2 bg-[rgb(var(--safety-yellow))] text-black font-oswald font-bold uppercase px-6 py-3 hover:brightness-110 transition-all"
                   data-testid="rfq-success-call"
                 >
                   <Phone size={18} />
@@ -132,7 +132,7 @@ const RequestQuote = () => {
             </div>
             <Link
               to="/"
-              className="text-safety-yellow font-mono text-sm uppercase tracking-wide hover:underline"
+              className="text-[rgb(var(--safety-yellow))] font-mono text-sm uppercase tracking-wide hover:underline"
             >
               Back to Home
             </Link>
@@ -145,35 +145,35 @@ const RequestQuote = () => {
   return (
     <div className="min-h-screen pt-32 lg:pt-44" data-testid="rfq-page">
       {/* Hero Section */}
-      <section className="py-16 bg-industrial-black">
+      <section className="py-16 bg-[rgb(var(--industrial-black))]">
         <div className="max-w-7xl mx-auto px-6">
           <AnimatedSection>
-            <span className="font-mono text-xs uppercase tracking-widest text-safety-yellow mb-4 block">
+            <span className="font-mono text-xs uppercase tracking-widest text-[rgb(var(--safety-yellow))] mb-4 block">
               Request a Quote
             </span>
-            <h1 className="font-oswald font-bold text-4xl md:text-6xl uppercase tracking-tight text-white mb-6">
-              Get Your <span className="text-safety-yellow">Custom Quote</span>
+            <h1 className="font-oswald font-bold text-4xl md:text-6xl uppercase tracking-tight text-[rgb(var(--text-primary))] mb-6">
+              Get Your <span className="text-[rgb(var(--safety-yellow))]">Custom Quote</span>
             </h1>
-            <p className="text-slate-400 text-lg max-w-3xl leading-relaxed">
-              Fill out the form below with your project details. Our team will review and respond within 24 hours.
+            <p className="text-[rgb(var(--text-secondary))] text-lg max-w-3xl leading-relaxed">
+              Fill out the form below with your project details. Our team will review and respond promptly.
             </p>
           </AnimatedSection>
         </div>
       </section>
 
       {/* Form Section */}
-      <section className="py-24 bg-industrial-gray">
+      <section className="py-24 bg-[rgb(var(--industrial-gray))]">
         <div className="max-w-4xl mx-auto px-6">
           <AnimatedSection>
-            <form onSubmit={handleSubmit} className="bg-industrial-black border border-white/5 p-8 md:p-12">
+            <form onSubmit={handleSubmit} className="bg-[rgb(var(--industrial-black))] border border-[rgb(var(--border))] p-8 md:p-12">
               {/* Contact Details */}
               <div className="mb-10">
-                <h2 className="font-oswald font-medium text-xl text-white uppercase mb-6 pb-4 border-b border-white/10">
+                <h2 className="font-oswald font-medium text-xl text-[rgb(var(--text-primary))] uppercase mb-6 pb-4 border-b border-[rgb(var(--border))]">
                   Contact Information
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label className="font-mono text-xs uppercase tracking-wide text-slate-500 block mb-2">
+                    <label className="font-mono text-xs uppercase tracking-wide text-[rgb(var(--text-secondary))] block mb-2">
                       Your Name *
                     </label>
                     <input
@@ -182,13 +182,13 @@ const RequestQuote = () => {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="w-full bg-transparent border-b border-white/20 px-0 py-3 text-white placeholder:text-slate-600 focus:border-safety-yellow focus:outline-none transition-colors"
+                      className="w-full bg-transparent border-b border-[rgb(var(--border))] px-0 py-3 text-[rgb(var(--text-primary))] placeholder:text-[rgb(var(--text-secondary))]/50 focus:border-[rgb(var(--safety-yellow))] focus:outline-none transition-colors"
                       placeholder="John Doe"
                       data-testid="rfq-name-input"
                     />
                   </div>
                   <div>
-                    <label className="font-mono text-xs uppercase tracking-wide text-slate-500 block mb-2">
+                    <label className="font-mono text-xs uppercase tracking-wide text-[rgb(var(--text-secondary))] block mb-2">
                       Company Name *
                     </label>
                     <input
@@ -197,13 +197,13 @@ const RequestQuote = () => {
                       value={formData.company_name}
                       onChange={handleChange}
                       required
-                      className="w-full bg-transparent border-b border-white/20 px-0 py-3 text-white placeholder:text-slate-600 focus:border-safety-yellow focus:outline-none transition-colors"
+                      className="w-full bg-transparent border-b border-[rgb(var(--border))] px-0 py-3 text-[rgb(var(--text-primary))] placeholder:text-[rgb(var(--text-secondary))]/50 focus:border-[rgb(var(--safety-yellow))] focus:outline-none transition-colors"
                       placeholder="Your Company"
                       data-testid="rfq-company-input"
                     />
                   </div>
                   <div>
-                    <label className="font-mono text-xs uppercase tracking-wide text-slate-500 block mb-2">
+                    <label className="font-mono text-xs uppercase tracking-wide text-[rgb(var(--text-secondary))] block mb-2">
                       Email Address *
                     </label>
                     <input
@@ -212,13 +212,13 @@ const RequestQuote = () => {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="w-full bg-transparent border-b border-white/20 px-0 py-3 text-white placeholder:text-slate-600 focus:border-safety-yellow focus:outline-none transition-colors"
+                      className="w-full bg-transparent border-b border-[rgb(var(--border))] px-0 py-3 text-[rgb(var(--text-primary))] placeholder:text-[rgb(var(--text-secondary))]/50 focus:border-[rgb(var(--safety-yellow))] focus:outline-none transition-colors"
                       placeholder="you@company.com"
                       data-testid="rfq-email-input"
                     />
                   </div>
                   <div>
-                    <label className="font-mono text-xs uppercase tracking-wide text-slate-500 block mb-2">
+                    <label className="font-mono text-xs uppercase tracking-wide text-[rgb(var(--text-secondary))] block mb-2">
                       Phone Number *
                     </label>
                     <input
@@ -227,7 +227,7 @@ const RequestQuote = () => {
                       value={formData.phone}
                       onChange={handleChange}
                       required
-                      className="w-full bg-transparent border-b border-white/20 px-0 py-3 text-white placeholder:text-slate-600 focus:border-safety-yellow focus:outline-none transition-colors"
+                      className="w-full bg-transparent border-b border-[rgb(var(--border))] px-0 py-3 text-[rgb(var(--text-primary))] placeholder:text-[rgb(var(--text-secondary))]/50 focus:border-[rgb(var(--safety-yellow))] focus:outline-none transition-colors"
                       placeholder="+91 9876543210"
                       data-testid="rfq-phone-input"
                     />
@@ -237,12 +237,12 @@ const RequestQuote = () => {
 
               {/* Project Details */}
               <div className="mb-10">
-                <h2 className="font-oswald font-medium text-xl text-white uppercase mb-6 pb-4 border-b border-white/10">
+                <h2 className="font-oswald font-medium text-xl text-[rgb(var(--text-primary))] uppercase mb-6 pb-4 border-b border-[rgb(var(--border))]">
                   Project Details
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label className="font-mono text-xs uppercase tracking-wide text-slate-500 block mb-2">
+                    <label className="font-mono text-xs uppercase tracking-wide text-[rgb(var(--text-secondary))] block mb-2">
                       Product/Service Type *
                     </label>
                     <select
@@ -250,20 +250,20 @@ const RequestQuote = () => {
                       value={formData.product_service}
                       onChange={handleChange}
                       required
-                      className="w-full bg-transparent border-b border-white/20 px-0 py-3 text-white focus:border-safety-yellow focus:outline-none transition-colors appearance-none cursor-pointer"
+                      className="w-full bg-transparent border-b border-[rgb(var(--border))] px-0 py-3 text-[rgb(var(--text-primary))] focus:border-[rgb(var(--safety-yellow))] focus:outline-none transition-colors appearance-none cursor-pointer"
                       data-testid="rfq-service-select"
                     >
-                      <option value="" className="bg-industrial-gray">Select Service</option>
+                      <option value="" className="bg-[rgb(var(--industrial-gray))]">Select Service</option>
                       {services.map((service) => (
-                        <option key={service.id} value={service.title} className="bg-industrial-gray">
+                        <option key={service.id} value={service.title} className="bg-[rgb(var(--industrial-gray))]">
                           {service.title}
                         </option>
                       ))}
-                      <option value="Other" className="bg-industrial-gray">Other</option>
+                      <option value="Other" className="bg-[rgb(var(--industrial-gray))]">Other</option>
                     </select>
                   </div>
                   <div>
-                    <label className="font-mono text-xs uppercase tracking-wide text-slate-500 block mb-2">
+                    <label className="font-mono text-xs uppercase tracking-wide text-[rgb(var(--text-secondary))] block mb-2">
                       Material Type *
                     </label>
                     <select
@@ -271,17 +271,17 @@ const RequestQuote = () => {
                       value={formData.material_type}
                       onChange={handleChange}
                       required
-                      className="w-full bg-transparent border-b border-white/20 px-0 py-3 text-white focus:border-safety-yellow focus:outline-none transition-colors appearance-none cursor-pointer"
+                      className="w-full bg-transparent border-b border-[rgb(var(--border))] px-0 py-3 text-[rgb(var(--text-primary))] focus:border-[rgb(var(--safety-yellow))] focus:outline-none transition-colors appearance-none cursor-pointer"
                       data-testid="rfq-material-select"
                     >
-                      <option value="" className="bg-industrial-gray">Select Material</option>
+                      <option value="" className="bg-[rgb(var(--industrial-gray))]">Select Material</option>
                       {materialTypes.map((type) => (
-                        <option key={type} value={type} className="bg-industrial-gray">{type}</option>
+                        <option key={type} value={type} className="bg-[rgb(var(--industrial-gray))]">{type}</option>
                       ))}
                     </select>
                   </div>
                   <div>
-                    <label className="font-mono text-xs uppercase tracking-wide text-slate-500 block mb-2">
+                    <label className="font-mono text-xs uppercase tracking-wide text-[rgb(var(--text-secondary))] block mb-2">
                       Quantity/Weight *
                     </label>
                     <input
@@ -290,13 +290,13 @@ const RequestQuote = () => {
                       value={formData.quantity}
                       onChange={handleChange}
                       required
-                      className="w-full bg-transparent border-b border-white/20 px-0 py-3 text-white placeholder:text-slate-600 focus:border-safety-yellow focus:outline-none transition-colors"
+                      className="w-full bg-transparent border-b border-[rgb(var(--border))] px-0 py-3 text-[rgb(var(--text-primary))] placeholder:text-[rgb(var(--text-secondary))]/50 focus:border-[rgb(var(--safety-yellow))] focus:outline-none transition-colors"
                       placeholder="e.g., 50 MT, 10 pieces"
                       data-testid="rfq-quantity-input"
                     />
                   </div>
                   <div>
-                    <label className="font-mono text-xs uppercase tracking-wide text-slate-500 block mb-2">
+                    <label className="font-mono text-xs uppercase tracking-wide text-[rgb(var(--text-secondary))] block mb-2">
                       Delivery Location *
                     </label>
                     <input
@@ -305,7 +305,7 @@ const RequestQuote = () => {
                       value={formData.delivery_location}
                       onChange={handleChange}
                       required
-                      className="w-full bg-transparent border-b border-white/20 px-0 py-3 text-white placeholder:text-slate-600 focus:border-safety-yellow focus:outline-none transition-colors"
+                      className="w-full bg-transparent border-b border-[rgb(var(--border))] px-0 py-3 text-[rgb(var(--text-primary))] placeholder:text-[rgb(var(--text-secondary))]/50 focus:border-[rgb(var(--safety-yellow))] focus:outline-none transition-colors"
                       placeholder="City, State"
                       data-testid="rfq-location-input"
                     />
@@ -313,7 +313,7 @@ const RequestQuote = () => {
                 </div>
 
                 <div className="mt-6">
-                  <label className="font-mono text-xs uppercase tracking-wide text-slate-500 block mb-2">
+                  <label className="font-mono text-xs uppercase tracking-wide text-[rgb(var(--text-secondary))] block mb-2">
                     Timeline/Urgency *
                   </label>
                   <select
@@ -321,12 +321,12 @@ const RequestQuote = () => {
                     value={formData.timeline}
                     onChange={handleChange}
                     required
-                    className="w-full bg-transparent border-b border-white/20 px-0 py-3 text-white focus:border-safety-yellow focus:outline-none transition-colors appearance-none cursor-pointer"
+                    className="w-full bg-transparent border-b border-[rgb(var(--border))] px-0 py-3 text-[rgb(var(--text-primary))] focus:border-[rgb(var(--safety-yellow))] focus:outline-none transition-colors appearance-none cursor-pointer"
                     data-testid="rfq-timeline-select"
                   >
-                    <option value="" className="bg-industrial-gray">Select Timeline</option>
+                    <option value="" className="bg-[rgb(var(--industrial-gray))]">Select Timeline</option>
                     {timelineOptions.map((option) => (
-                      <option key={option} value={option} className="bg-industrial-gray">{option}</option>
+                      <option key={option} value={option} className="bg-[rgb(var(--industrial-gray))]">{option}</option>
                     ))}
                   </select>
                 </div>
@@ -334,12 +334,12 @@ const RequestQuote = () => {
 
               {/* Additional Info */}
               <div className="mb-10">
-                <h2 className="font-oswald font-medium text-xl text-white uppercase mb-6 pb-4 border-b border-white/10">
+                <h2 className="font-oswald font-medium text-xl text-[rgb(var(--text-primary))] uppercase mb-6 pb-4 border-b border-[rgb(var(--border))]">
                   Additional Information
                 </h2>
 
                 <div className="mb-6">
-                  <label className="font-mono text-xs uppercase tracking-wide text-slate-500 block mb-2">
+                  <label className="font-mono text-xs uppercase tracking-wide text-[rgb(var(--text-secondary))] block mb-2">
                     Notes/Specifications
                   </label>
                   <textarea
@@ -347,14 +347,14 @@ const RequestQuote = () => {
                     value={formData.notes}
                     onChange={handleChange}
                     rows={4}
-                    className="w-full bg-transparent border-b border-white/20 px-0 py-3 text-white placeholder:text-slate-600 focus:border-safety-yellow focus:outline-none transition-colors resize-none"
+                    className="w-full bg-transparent border-b border-[rgb(var(--border))] px-0 py-3 text-[rgb(var(--text-primary))] placeholder:text-[rgb(var(--text-secondary))]/50 focus:border-[rgb(var(--safety-yellow))] focus:outline-none transition-colors resize-none"
                     placeholder="Any specific requirements, specifications, or notes..."
                     data-testid="rfq-notes-input"
                   />
                 </div>
 
                 <div>
-                  <label className="font-mono text-xs uppercase tracking-wide text-slate-500 block mb-2">
+                  <label className="font-mono text-xs uppercase tracking-wide text-[rgb(var(--text-secondary))] block mb-2">
                     Upload Drawing/Specification (Optional)
                   </label>
                   <div className="relative">
@@ -368,10 +368,10 @@ const RequestQuote = () => {
                     />
                     <label
                       htmlFor="rfq-file-upload"
-                      className="flex items-center gap-3 border border-dashed border-white/20 p-4 cursor-pointer hover:border-safety-yellow/50 transition-colors"
+                      className="flex items-center gap-3 border border-dashed border-[rgb(var(--border))] p-4 cursor-pointer hover:border-[rgb(var(--safety-yellow))]/50 transition-colors"
                     >
-                      <Upload size={20} className="text-slate-500" />
-                      <span className="text-slate-400 text-sm">
+                      <Upload size={20} className="text-[rgb(var(--text-secondary))]" />
+                      <span className="text-[rgb(var(--text-secondary))] text-sm">
                         {file ? file.name : 'Click to upload (PDF, DWG, Images - Max 10MB)'}
                       </span>
                     </label>
@@ -382,14 +382,14 @@ const RequestQuote = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-safety-yellow text-black font-oswald font-bold uppercase py-4 flex items-center justify-center gap-3 hover:bg-white transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full bg-[rgb(var(--safety-yellow))] text-black font-oswald font-bold uppercase py-4 flex items-center justify-center gap-3 hover:brightness-110 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
                 data-testid="rfq-submit-btn"
               >
                 {isSubmitting ? 'Submitting...' : 'Submit Quote Request'}
                 <Send size={18} />
               </button>
 
-              <p className="text-center text-slate-500 text-sm mt-6">
+              <p className="text-center text-[rgb(var(--text-secondary))] text-sm mt-6">
                 By submitting, you agree to be contacted by our team regarding your inquiry.
               </p>
             </form>
@@ -398,7 +398,7 @@ const RequestQuote = () => {
       </section>
 
       {/* Quick Contact */}
-      <section className="py-12 bg-safety-yellow">
+      <section className="py-12 bg-[rgb(var(--safety-yellow))]">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="text-black">
@@ -410,14 +410,14 @@ const RequestQuote = () => {
                 href={`https://wa.me/${companyInfo.contact.whatsapp}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 bg-black text-white font-oswald uppercase px-6 py-3 hover:bg-industrial-gray transition-colors"
+                className="flex items-center gap-2 bg-black text-white font-oswald uppercase px-6 py-3 hover:bg-[rgb(var(--industrial-gray))] transition-colors"
               >
                 <MessageCircle size={18} />
                 WhatsApp
               </a>
               <a
                 href={`tel:${companyInfo.contact.phone}`}
-                className="flex items-center gap-2 bg-white text-black font-oswald font-bold uppercase px-6 py-3 hover:bg-industrial-gray hover:text-white transition-colors"
+                className="flex items-center gap-2 bg-white text-black font-oswald font-bold uppercase px-6 py-3 hover:bg-[rgb(var(--industrial-gray))] hover:text-white transition-colors"
               >
                 <Phone size={18} />
                 Call Now
