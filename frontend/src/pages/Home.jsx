@@ -42,7 +42,7 @@ const Home = () => {
             }}
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[rgb(var(--industrial-black))] via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-transparent to-transparent" />
         </motion.div>
 
         {/* Grid Pattern Overlay */}
@@ -75,7 +75,7 @@ const Home = () => {
               transition={{ delay: 0.4, duration: 0.8 }}
               className="font-oswald font-bold text-5xl md:text-7xl uppercase tracking-tight leading-none text-white mb-6"
             >
-              Precision <span className="text-[rgb(var(--safety-yellow))]">Engineering</span>
+              Precision <span className="text-amber-400">Engineering</span>
               <br />
               Heavy Fabrication
             </motion.h1>
@@ -85,7 +85,7 @@ const Home = () => {
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 0.8 }}
-              className="text-xl md:text-2xl text-[rgb(var(--safety-yellow))] italic mb-4 font-light"
+              className="text-xl md:text-2xl text-amber-400 italic mb-4 font-light"
             >
               Excellence is our foundation.<br />
               Trust is our legacy.
@@ -111,7 +111,7 @@ const Home = () => {
             >
               <Link
                 to="/request-quote"
-                className="group bg-[rgb(var(--safety-yellow))] text-black font-oswald font-bold uppercase px-8 py-4 flex items-center gap-3 hover:brightness-110 transition-all"
+                className="group bg-amber-500 hover:bg-amber-400 text-black font-oswald font-bold uppercase px-8 py-4 flex items-center gap-3 transition-all"
                 data-testid="hero-request-quote-btn"
               >
                 Request a Quote
@@ -135,15 +135,15 @@ const Home = () => {
               className="mt-12 flex flex-wrap gap-6 text-sm text-slate-400"
             >
               <div className="flex items-center gap-2">
-                <Award size={16} className="text-[rgb(var(--safety-yellow))]" />
+                <Award size={16} className="text-amber-400" />
                 <span>35+ Years Legacy</span>
               </div>
               <div className="flex items-center gap-2">
-                <CheckCircle size={16} className="text-[rgb(var(--safety-yellow))]" />
+                <CheckCircle size={16} className="text-amber-400" />
                 <span>Quality-First Process</span>
               </div>
               <div className="flex items-center gap-2">
-                <Shield size={16} className="text-[rgb(var(--safety-yellow))]" />
+                <Shield size={16} className="text-amber-400" />
                 <span>Safety Culture</span>
               </div>
             </motion.div>
@@ -162,7 +162,7 @@ const Home = () => {
             transition={{ duration: 1.5, repeat: Infinity }}
             className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center pt-2"
           >
-            <div className="w-1 h-2 bg-[rgb(var(--safety-yellow))] rounded-full" />
+            <div className="w-1 h-2 bg-amber-400 rounded-full" />
           </motion.div>
         </motion.div>
       </section>
