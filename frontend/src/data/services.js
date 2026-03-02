@@ -6,7 +6,7 @@ export const services = [
     description: "We specialize in fabricating heavy-duty steel structures including building frames, industrial sheds, platforms, and support structures. Our team handles complex structural requirements with precision engineering and quality welding.",
     industries: ["Power Plants", "Steel Plants", "Cement Plants", "Manufacturing"],
     icon: "Building2",
-    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80"
+    image: "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=800&q=80"
   },
   {
     id: "pipe-rack-structures",
@@ -15,7 +15,7 @@ export const services = [
     description: "Design and fabrication of pipe rack structures for refineries, petrochemical plants, and process industries. We ensure structural integrity and compliance with industry standards.",
     industries: ["Oil & Gas", "Petrochemical", "Chemical Plants", "Refineries"],
     icon: "Layers",
-    image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&q=80"
+    image: "https://images.unsplash.com/photo-1518709766631-a6a7f45921c3?w=800&q=80"
   },
   {
     id: "conveyor-structures",
@@ -24,7 +24,7 @@ export const services = [
     description: "Complete conveyor structure fabrication for bulk material handling applications. From gallery structures to belt conveyor frames, we deliver robust solutions for continuous operations.",
     industries: ["Mining", "Cement", "Power Plants", "Steel Plants"],
     icon: "ArrowRightLeft",
-    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80"
+    image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=80"
   },
   {
     id: "piping",
@@ -33,7 +33,7 @@ export const services = [
     description: "Expert piping fabrication in Carbon Steel, Stainless Steel, Duplex, and Super Duplex materials. We handle spools, headers, manifolds, and complete piping systems with certified welders.",
     industries: ["Oil & Gas", "Chemical", "Pharmaceutical", "Food Processing"],
     icon: "Pipette",
-    image: "https://images.unsplash.com/photo-1720036236632-fdb6211cf317?w=800&q=80"
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80"
   },
   {
     id: "pressure-vessels",
@@ -42,7 +42,7 @@ export const services = [
     description: "Manufacturing of pressure vessels and storage vessels as per ASME standards. Our facility is equipped for complete vessel fabrication including heat treatment and testing.",
     industries: ["Oil & Gas", "Chemical", "Petrochemical", "Power"],
     icon: "Container",
-    image: "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=800&q=80"
+    image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=80"
   },
   {
     id: "storage-tanks",
@@ -51,7 +51,7 @@ export const services = [
     description: "Fabrication of atmospheric and low-pressure storage tanks as per API standards. We handle all sizes from small process tanks to large field-erected storage tanks.",
     industries: ["Oil & Gas", "Chemical", "Water Treatment", "Food & Beverage"],
     icon: "Database",
-    image: "https://images.unsplash.com/photo-1518709766631-a6a7f45921c3?w=800&q=80"
+    image: "https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=800&q=80"
   },
   {
     id: "heat-exchangers",
@@ -60,7 +60,7 @@ export const services = [
     description: "Design support and fabrication of shell and tube heat exchangers, air coolers, and condensers. We follow TEMA standards and deliver high-quality heat transfer equipment.",
     industries: ["Power", "Chemical", "Petrochemical", "HVAC"],
     icon: "Thermometer",
-    image: "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=800&q=80"
+    image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80"
   },
   {
     id: "reactors",
@@ -69,7 +69,7 @@ export const services = [
     description: "Fabrication of chemical reactors, agitated vessels, and mixing tanks in MS and SS materials. We handle jacketed vessels, limpet coil reactors, and custom designs.",
     industries: ["Chemical", "Pharmaceutical", "Food Processing", "Specialty Chemicals"],
     icon: "Atom",
-    image: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=800&q=80"
+    image: "https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=800&q=80"
   },
   {
     id: "fire-tube-boilers",
@@ -78,7 +78,7 @@ export const services = [
     description: "Manufacturing of fire tube boilers and boiler components. Our welding and quality processes ensure safe and efficient boiler operations.",
     industries: ["Power", "Textile", "Food Processing", "Manufacturing"],
     icon: "Flame",
-    image: "https://images.unsplash.com/photo-1513828583688-c52646db42da?w=800&q=80"
+    image: "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=800&q=80"
   },
   {
     id: "machining",
@@ -87,7 +87,7 @@ export const services = [
     description: "Complete machining capabilities including rollers, gears, bushes, couplings, rings, shafts, and impellers. Our machine shop handles heavy-duty and precision components.",
     industries: ["All Industries", "OEM Support", "Maintenance"],
     icon: "Settings",
-    image: "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=800&q=80"
+    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80"
   },
   {
     id: "studs",
@@ -96,7 +96,7 @@ export const services = [
     description: "Manufacturing of heavy-duty studs, bolts, and fasteners in alloy steel and stainless steel grades. We supply to high-temperature and high-pressure applications.",
     industries: ["Power Plants", "Refineries", "Petrochemical", "Heavy Engineering"],
     icon: "Wrench",
-    image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=80"
+    image: "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=800&q=80"
   },
   {
     id: "aluminum-welding",

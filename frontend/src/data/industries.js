@@ -5,7 +5,7 @@ export const industries = [
     description: "Supporting thermal, solar, and renewable energy projects with structural steel, piping, and equipment fabrication.",
     icon: "Zap",
     services: ["Heavy Structures", "Conveyor Systems", "Piping", "Heat Exchangers"],
-    image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800&q=80"
+    image: "https://images.unsplash.com/photo-1548337138-e87d889cc369?w=800&q=80"
   },
   {
     id: "steel-mining",
@@ -21,7 +21,7 @@ export const industries = [
     description: "Complete fabrication support for cement plants including kiln structures, material handling, and heavy component machining.",
     icon: "Building",
     services: ["Structural Steel", "Conveyor Structures", "Heavy Machining", "Vessels"],
-    image: "https://images.unsplash.com/photo-1590496793929-36417d3117de?w=800&q=80"
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80"
   },
   {
     id: "oil-gas",
@@ -35,9 +35,9 @@ export const industries = [
     id: "chemical",
     name: "Chemical & Petrochemical",
     description: "Specialized fabrication for chemical process industries with corrosion-resistant materials and precision equipment.",
-    icon: "Flask",
+    icon: "Beaker",
     services: ["Reactors", "SS Piping", "Storage Tanks", "Process Equipment"],
-    image: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=800&q=80"
+    image: "https://images.unsplash.com/photo-1581093458791-9d42e3c7e117?w=800&q=80"
   },
   {
     id: "infrastructure",
@@ -53,7 +53,7 @@ export const industries = [
     description: "Fabrication and machining support for manufacturing facilities across automotive, textile, and consumer goods sectors.",
     icon: "Factory",
     services: ["Machining", "Structures", "Equipment Support", "Maintenance"],
-    image: "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=800&q=80"
+    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80"
   },
   {
     id: "epc",
@@ -61,6 +61,6 @@ export const industries = [
     description: "Reliable fabrication partner for EPC companies. Timely delivery, quality assurance, and project coordination.",
     icon: "Users",
     services: ["All Fabrication Services", "Project Support", "Turnkey Packages"],
-    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80"
+    image: "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=800&q=80"
   }
 ];
