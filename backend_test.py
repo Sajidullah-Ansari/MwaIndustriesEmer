@@ -5,7 +5,7 @@ import os
 import base64
 
 # Use the public endpoint URL from frontend .env
-BACKEND_URL = "https://fabrication-pro-3.preview.emergentagent.com"
+BACKEND_URL = "https://fab-engineering-dev.preview.emergentagent.com"
 
 class MWAAPITester:
     def __init__(self, base_url=BACKEND_URL):
