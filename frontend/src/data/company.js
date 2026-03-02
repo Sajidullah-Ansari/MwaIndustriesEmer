@@ -2,11 +2,11 @@ export const companyInfo = {
   name: "MWA Industries",
   tagline: "Excellence is our foundation.\nTrust is our legacy.",
   taglineShort: "Excellence is our foundation. Trust is our legacy.",
-  description: "MWA Industries is a newly established fabrication unit built on a strong legacy of experience. Our core technical leadership is backed by 35+ years of hands-on industry experience in heavy fabrication, machining, and industrial execution.",
+  description: "MWA Industries is a trusted fabrication partner backed by 35+ years of hands-on industry experience in heavy fabrication, machining, and industrial execution.",
   logo: "/images/mwa-logo.png",
   
   contact: {
-    address: "Plot No. 77, Industrial Area, Bartori (Tilda), District Raipur (C.G.), India",
+    address: "Plot No. 78, Industrial Area, Bartori (Tilda), District Raipur (C.G.), India",
     email: "mwaindustries@gmail.com",
     phone: "8770618392",
     whatsapp: "918770618392",
@@ -54,7 +54,7 @@ export const companyInfo = {
     {
       id: "experience",
       title: "35+ Years Legacy",
-      description: "New firm powered by decades of hands-on fabrication expertise",
+      description: "Decades of hands-on fabrication expertise you can trust",
       icon: "Award"
     }
   ],
@@ -79,9 +79,9 @@ export const companyInfo = {
   ],
   
   about: {
-    story: "MWA Industries is a newly established fabrication unit built on a strong legacy of experience. Our core technical leadership is backed by 35+ years of hands-on industry experience—the founder's father has worked in the fabrication and engineering field for over three decades, bringing invaluable practical knowledge to every project we undertake.",
-    storyHighlight: "A new firm powered by decades of fabrication expertise. Our shop is new, our experience is not.",
-    experience: "35+ years of practical knowledge in heavy fabrication, machining, and industrial execution guides our work. This experience-backed leadership ensures we understand what it takes to deliver quality fabrication on time.",
+    story: "MWA Industries is your trusted fabrication partner, backed by 35+ years of hands-on industry experience. Our leadership has worked in the fabrication and engineering field for over three decades, bringing invaluable practical knowledge to every project we undertake.",
+    storyHighlight: "Backed by decades of fabrication expertise you can trust.",
+    experience: "35+ years of practical knowledge in heavy fabrication, machining, and industrial execution guides our work. Our experienced leadership ensures we understand what it takes to deliver quality fabrication on time.",
     vision: "To be the most trusted name in heavy fabrication and engineering services in Central India, known for quality, reliability, and customer partnership.",
     mission: "To deliver precision-engineered fabrication solutions that meet global standards, on time and within budget, while maintaining the highest safety standards.",
     facility: "Our fabrication facility is spread across a well-equipped workshop with overhead cranes, welding bays, blasting & painting area, and machine shop. We have the capacity to handle projects from small components to large structural assemblies."
