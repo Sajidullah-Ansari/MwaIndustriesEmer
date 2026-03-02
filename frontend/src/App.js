@@ -1,52 +1,57 @@
-import { useEffect } from "react";
 import "@/App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import axios from "axios";
-
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-const API = `${BACKEND_URL}/api`;
-
-const Home = () => {
-  const helloWorldApi = async () => {
-    try {
-      const response = await axios.get(`${API}/`);
-      console.log(response.data.message);
-    } catch (e) {
-      console.error(e, `errored out requesting / api`);
-    }
-  };
-
-  useEffect(() => {
-    helloWorldApi();
-  }, []);
-
-  return (
-    <div>
-      <header className="App-header">
-        <a
-          className="App-link"
-          href="https://emergent.sh"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="https://avatars.githubusercontent.com/in/1201222?s=120&u=2686cf91179bbafbc7a71bfbc43004cf9ae1acea&v=4" />
-        </a>
-        <p className="mt-5">Building something incredible ~!</p>
-      </header>
-    </div>
-  );
-};
+import { Toaster } from "sonner";
+import Navbar from "./components/layout/Navbar";
+import Footer from "./components/layout/Footer";
+import StickyContactBar from "./components/layout/StickyContactBar";
+import ScrollProgress from "./components/ui/ScrollProgress";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Services from "./pages/Services";
+import Industries from "./pages/Industries";
+import Projects from "./pages/Projects";
+import Quality from "./pages/Quality";
+import Contact from "./pages/Contact";
+import RequestQuote from "./pages/RequestQuote";
+import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
+import Admin from "./pages/Admin";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App min-h-screen bg-industrial-black">
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />}>
-            <Route index element={<Home />} />
-          </Route>
-        </Routes>
+        <ScrollProgress />
+        <Navbar />
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/industries" element={<Industries />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/quality" element={<Quality />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/request-quote" element={<RequestQuote />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
+            <Route path="/admin" element={<Admin />} />
+          </Routes>
+        </main>
+        <Footer />
+        <StickyContactBar />
+        <Toaster 
+          position="top-right" 
+          toastOptions={{
+            style: {
+              background: '#121212',
+              border: '1px solid rgba(255,255,255,0.1)',
+              color: '#F8FAFC',
+            },
+          }}
+        />
       </BrowserRouter>
+      <div className="noise-overlay" />
     </div>
   );
 }
