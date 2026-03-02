@@ -168,7 +168,7 @@ const Home = () => {
       </section>
 
       {/* Brand Strip Section */}
-      <section className="py-16 bg-neutral-900 border-y border-neutral-800">
+      <section className="py-16 bg-[rgb(var(--industrial-gray))] border-y border-[rgb(var(--border))]">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center">
             <img 
@@ -176,24 +176,24 @@ const Home = () => {
               alt="MWA Industries"
               className="h-16 w-auto object-contain mx-auto mb-4"
             />
-            <p className="text-amber-400 text-lg italic mb-4">
+            <p className="text-[rgb(var(--safety-yellow))] text-lg italic mb-4">
               Excellence is our foundation. Trust is our legacy.
             </p>
-            <p className="text-neutral-400 max-w-2xl mx-auto">
-              A new firm powered by 35+ years of fabrication experience. Our shop is new, our experience is not.
+            <p className="text-[rgb(var(--text-secondary))] max-w-2xl mx-auto">
+              Your trusted fabrication partner backed by 35+ years of expertise.
             </p>
           </div>
         </div>
       </section>
 
       {/* Trust Signals Section - No fake metrics */}
-      <section className="py-24 bg-neutral-950">
+      <section className="py-24 bg-[rgb(var(--industrial-black))]">
         <div className="max-w-7xl mx-auto px-6">
           <AnimatedSection className="text-center mb-16">
-            <span className="font-mono text-xs uppercase tracking-widest text-amber-400 mb-4 block">
+            <span className="font-mono text-xs uppercase tracking-widest text-[rgb(var(--safety-yellow))] mb-4 block">
               Why Choose Us
             </span>
-            <h2 className="font-oswald font-medium text-3xl md:text-5xl uppercase tracking-tight text-white">
+            <h2 className="font-oswald font-medium text-3xl md:text-5xl uppercase tracking-tight text-[rgb(var(--text-primary))]">
               Built on Quality & Trust
             </h2>
           </AnimatedSection>
