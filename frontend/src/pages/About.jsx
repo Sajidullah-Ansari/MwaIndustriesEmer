@@ -32,7 +32,7 @@ const About = () => {
                 Our Story
               </span>
               <h2 className="font-oswald font-medium text-3xl md:text-4xl uppercase tracking-tight text-[rgb(var(--text-primary))] mb-6">
-                A New Firm, Decades of Experience
+                Decades of Experience
               </h2>
               <p className="text-[rgb(var(--safety-yellow))] text-lg italic mb-4">
                 "{companyInfo.about.storyHighlight}"
