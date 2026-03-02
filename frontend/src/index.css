@@ -58,9 +58,9 @@
   --input: 212 212 212;
   --ring: 180 140 20;
   
-  /* Custom colors - keep dark backgrounds for visual contrast */
-  --industrial-black: 30 30 30;
-  --industrial-gray: 245 245 245;
+  /* Custom colors for light mode - lighter backgrounds */
+  --industrial-black: 250 250 250;
+  --industrial-gray: 240 240 240;
   --industrial-steel: 229 229 229;
   --safety-yellow: 180 140 20;
   --text-primary: 23 23 23;
