@@ -351,7 +351,7 @@ const Home = () => {
             </div>
             <Link
               to="/industries"
-              className="text-[rgb(var(--safety-yellow))] font-mono text-sm uppercase tracking-wide flex items-center gap-2 hover:gap-3 transition-all"
+              className="text-amber-400 font-mono text-sm uppercase tracking-wide flex items-center gap-2 hover:gap-3 transition-all"
             >
               All Industries <ArrowRight size={14} />
             </Link>
@@ -362,9 +362,9 @@ const Home = () => {
               <AnimatedSection key={industry.id} delay={index * 0.05}>
                 <Link
                   to="/industries"
-                  className="group block bg-[rgb(var(--industrial-black))] border border-[rgb(var(--border))] p-6 hover:border-[rgb(var(--safety-yellow))]/30 transition-all duration-500 text-center"
+                  className="group block bg-neutral-950 border border-neutral-800 p-6 hover:border-amber-400/30 transition-all duration-500 text-center"
                 >
-                  <span className="font-oswald text-[rgb(var(--text-primary))] uppercase text-sm group-hover:text-[rgb(var(--safety-yellow))] transition-colors">
+                  <span className="font-oswald text-white uppercase text-sm group-hover:text-amber-400 transition-colors">
                     {industry.name}
                   </span>
                 </Link>
@@ -375,20 +375,20 @@ const Home = () => {
       </section>
 
       {/* Featured Projects */}
-      <section className="py-24 bg-[rgb(var(--industrial-black))]">
+      <section className="py-24 bg-neutral-950">
         <div className="max-w-7xl mx-auto px-6">
           <AnimatedSection className="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-16 gap-6">
             <div>
-              <span className="font-mono text-xs uppercase tracking-widest text-[rgb(var(--safety-yellow))] mb-4 block">
+              <span className="font-mono text-xs uppercase tracking-widest text-amber-400 mb-4 block">
                 Our Work
               </span>
-              <h2 className="font-oswald font-medium text-3xl md:text-5xl uppercase tracking-tight text-[rgb(var(--text-primary))]">
+              <h2 className="font-oswald font-medium text-3xl md:text-5xl uppercase tracking-tight text-white">
                 Featured Projects
               </h2>
             </div>
             <Link
               to="/projects"
-              className="text-[rgb(var(--safety-yellow))] font-mono text-sm uppercase tracking-wide flex items-center gap-2 hover:gap-3 transition-all"
+              className="text-amber-400 font-mono text-sm uppercase tracking-wide flex items-center gap-2 hover:gap-3 transition-all"
             >
               View All <ArrowRight size={14} />
             </Link>
@@ -399,7 +399,7 @@ const Home = () => {
               <AnimatedSection key={project.id} delay={index * 0.1}>
                 <Link 
                   to="/projects"
-                  className="group block bg-[rgb(var(--industrial-gray))] border border-[rgb(var(--border))] overflow-hidden hover:border-[rgb(var(--safety-yellow))]/30 transition-all duration-500"
+                  className="group block bg-neutral-900 border border-neutral-800 overflow-hidden hover:border-amber-400/30 transition-all duration-500"
                 >
                   <div className="aspect-[4/3] relative overflow-hidden">
                     <img 
@@ -408,23 +408,23 @@ const Home = () => {
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                       loading="lazy"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[rgb(var(--industrial-gray))] via-transparent to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-neutral-900 via-transparent to-transparent" />
                     <div className="absolute top-4 left-4">
-                      <span className="bg-[rgb(var(--safety-yellow))] text-black font-mono text-xs uppercase px-3 py-1">
+                      <span className="bg-amber-500 text-black font-mono text-xs uppercase px-3 py-1">
                         {project.category}
                       </span>
                     </div>
                   </div>
                   <div className="p-6">
-                    <h3 className="font-oswald font-medium text-lg text-[rgb(var(--text-primary))] uppercase mb-2">
+                    <h3 className="font-oswald font-medium text-lg text-white uppercase mb-2">
                       {project.title}
                     </h3>
-                    <p className="text-[rgb(var(--text-secondary))] text-sm mb-3">
+                    <p className="text-neutral-400 text-sm mb-3">
                       {project.location}
                     </p>
                     <div className="flex flex-wrap gap-2">
                       {project.highlights.slice(0, 2).map((highlight) => (
-                        <span key={highlight} className="text-xs text-[rgb(var(--text-secondary))] bg-[rgb(var(--industrial-black))] px-2 py-1">
+                        <span key={highlight} className="text-xs text-neutral-400 bg-neutral-950 px-2 py-1">
                           {highlight}
                         </span>
                       ))}
@@ -438,7 +438,7 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-[rgb(var(--industrial-gray))] relative overflow-hidden">
+      <section className="py-24 bg-neutral-900 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div 
             className="absolute inset-0 bg-cover bg-center"
@@ -449,16 +449,16 @@ const Home = () => {
         </div>
         <div className="max-w-7xl mx-auto px-6 relative">
           <AnimatedSection className="max-w-3xl mx-auto text-center">
-            <h2 className="font-oswald font-bold text-4xl md:text-6xl uppercase tracking-tight text-[rgb(var(--text-primary))] mb-6">
-              Ready to Start Your <span className="text-[rgb(var(--safety-yellow))]">Project?</span>
+            <h2 className="font-oswald font-bold text-4xl md:text-6xl uppercase tracking-tight text-white mb-6">
+              Ready to Start Your <span className="text-amber-400">Project?</span>
             </h2>
-            <p className="text-[rgb(var(--text-secondary))] text-lg mb-10">
+            <p className="text-neutral-400 text-lg mb-10">
               Get in touch with our team. We'll review your requirements and respond promptly.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link
                 to="/request-quote"
-                className="group bg-[rgb(var(--safety-yellow))] text-black font-oswald font-bold uppercase px-8 py-4 flex items-center gap-3 hover:brightness-110 transition-all"
+                className="group bg-amber-500 hover:bg-amber-400 text-black font-oswald font-bold uppercase px-8 py-4 flex items-center gap-3 transition-all"
                 data-testid="cta-request-quote-btn"
               >
                 Request a Quote
@@ -466,7 +466,7 @@ const Home = () => {
               </Link>
               <Link
                 to="/contact"
-                className="border border-[rgb(var(--border))] text-[rgb(var(--text-primary))] font-oswald uppercase px-8 py-4 hover:bg-[rgb(var(--industrial-black))] transition-colors"
+                className="border border-neutral-700 text-white font-oswald uppercase px-8 py-4 hover:bg-neutral-800 transition-colors"
               >
                 Contact Us
               </Link>
@@ -476,7 +476,7 @@ const Home = () => {
       </section>
 
       {/* Contact Strip */}
-      <section className="py-12 bg-[rgb(var(--safety-yellow))]">
+      <section className="py-12 bg-amber-500">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="flex flex-col md:flex-row items-center gap-6 text-black">
@@ -501,7 +501,7 @@ const Home = () => {
             </div>
             <Link
               to="/request-quote"
-              className="bg-black text-white font-oswald font-bold uppercase px-6 py-3 hover:bg-[rgb(var(--industrial-gray))] transition-colors"
+              className="bg-black text-white font-oswald font-bold uppercase px-6 py-3 hover:bg-neutral-800 transition-colors"
             >
               Get Quote
             </Link>
