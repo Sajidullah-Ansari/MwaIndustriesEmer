@@ -29,14 +29,17 @@ Build a premium, modern, and trust-building company website for **MWA Industries
 - Advanced Contact and RFQ forms with file upload
 - Backend form storage in MongoDB
 - Admin panel to view submissions
-- Light/Dark theme toggle
+- Light/Dark theme toggle with proper background changes
 - Mobile-responsive design
 - Smooth animations with Framer Motion
 
 ## Branding
 - **Logo**: Gold MWA Industries logo at `/images/mwa-logo.png`
 - **Tagline**: "Excellence is our foundation. Trust is our legacy."
-- **Color Palette**: Dark industrial theme (neutral-900/950) with gold accents (amber-400/500)
+- **Color Palette**: 
+  - Dark mode: Dark industrial theme (neutral-900/950) with gold accents (amber-400/500)
+  - Light mode: Light gray backgrounds with dark text and gold accents
+- **Location**: Plot No. 78, Industrial Area, Bartori (Tilda), District Raipur (C.G.), India
 
 ## Tech Stack
 - **Frontend**: React with TailwindCSS, Framer Motion
@@ -46,15 +49,18 @@ Build a premium, modern, and trust-building company website for **MWA Industries
 
 ## What's Been Implemented
 
+### December 2025 - Session 3
+- [x] Fixed light mode to properly change background colors (was using hardcoded colors)
+- [x] Updated CSS variables for better light mode contrast (--text-secondary: 64 64 64)
+- [x] Removed all "new firm" mentions from company narrative
+- [x] Fixed plot number from "77" to "78" in address
+- [x] Updated Navbar and Footer to use CSS variables for theme support
+- [x] Updated Home, About, and Services pages for proper theme switching
+
 ### December 2025 - Session 2
 - [x] New gold MWA Industries logo integration (navbar, hero, footer)
 - [x] Updated all 12 service images with relevant industrial photos
 - [x] Updated all 8 project images with relevant industrial photos
-- [x] Fixed light theme visibility by standardizing dark industrial styling
-- [x] Navbar updated with consistent dark styling (neutral-900)
-- [x] Footer updated with consistent dark styling
-- [x] Homepage sections updated with neutral-900/950 backgrounds
-- [x] Services page updated with consistent styling
 - [x] Testing: 100% backend API pass rate, all frontend features verified
 
 ### Previously Completed
@@ -77,8 +83,6 @@ Build a premium, modern, and trust-building company website for **MWA Industries
 - `GET /api/admin/rfqs` - Get all RFQ submissions
 - `PATCH /api/admin/contacts/{id}/status` - Update contact status
 - `PATCH /api/admin/rfqs/{id}/status` - Update RFQ status
-- `GET /api/admin/contacts/{id}/file` - Download contact attachment
-- `GET /api/admin/rfqs/{id}/file` - Download RFQ attachment
 
 ## Database Schema
 - **contacts**: `{id, name, company_name, email, phone, requirement_type, message, file_name, file_data, created_at, status}`
@@ -98,10 +102,12 @@ Build a premium, modern, and trust-building company website for **MWA Industries
 - `/app/frontend/src/data/company.js` - Company info and logo path
 - `/app/frontend/src/data/services.js` - Services with image URLs
 - `/app/frontend/src/data/projects.js` - Projects with image URLs
-- `/app/frontend/src/components/layout/Navbar.jsx` - Navigation with logo
+- `/app/frontend/src/components/layout/Navbar.jsx` - Navigation with logo and theme toggle
 - `/app/frontend/src/components/layout/Footer.jsx` - Footer with logo
 - `/app/frontend/src/pages/Home.jsx` - Homepage
 - `/app/frontend/src/pages/Services.jsx` - Services page
+- `/app/frontend/src/pages/About.jsx` - About page
+- `/app/frontend/src/index.css` - CSS with theme variables
 - `/app/backend/server.py` - All API endpoints
 
 ## Test Reports
